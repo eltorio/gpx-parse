@@ -5,10 +5,36 @@ A library for parsing gpx data. Works against most of the Gpx v1.0 spec and Gpx 
 
 More information available on the [Project Page](http://www.vapidspace.com/gpx-parse)
 
-#Installation
+#Installation for Vuejs v3
+See https://github.com/eltorio/CFDTrackJoiner/tree/modularize for a sample use
+Look at https://github.com/eltorio/CFDTrackJoiner/blob/modularize/src/module/trackjoiner.js
+and https://github.com/eltorio/CFDTrackJoiner/blob/modularize/src/views/TrackJoinerView.vue
 
-	$ npm install gpx-parse
+```bash
+	# at the root of the Vue3 project
+	git clone https://github.com/eltorio/gpx-parse.git
+	# in the Vue3 package.json add the dependencie
+	"gpx-parser": "file:./gpx-parse"
+````
 
+```javascript
+	//in the vue.config.js configure WebPack 5
+	module.exports = {
+		runtimeCompiler: true,
+		configureWebpack: {
+			devtool: 'source-map',
+			resolve: {
+			fallback: {
+				"fs": false,
+				"http": require.resolve("stream-http"),
+				"https": require.resolve("https-browserify"),
+				"timers": require.resolve("timers-browserify"),
+				"stream": require.resolve("stream-browserify")
+				}
+			}
+		},
+	};
+```
 #Or with bower
 
 	$ bower install gpx-parse

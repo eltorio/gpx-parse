@@ -11,7 +11,13 @@
     "geo"
   ],
   "dependencies": {
-    "xml2js": "^0.4.4"
+    "xml2js": "^0.4.4",
+    "url": "^0.11.0",
+    "assert":"^2.0.0",
+    "timers-browserify":"^2.0.12",
+    "stream-browserify": "^3.0.0",
+    "stream-http":"^3.2.0",
+    "https-browserify":"^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -36,8 +42,5 @@
     "coveralls": "jscoverage lib && GPXPARSE_COV=1 nodeunit --reporter=lcov tests | coveralls",
     "lcov": "jscoverage lib && GPXPARSE_COV=1 nodeunit --reporter=lcov tests",
     "browserify": "node_modules/.bin/grunt browserify"
-  },
-  "browserify":{
-    "./lib-cov/gpx-parse.js": false
   }
 }
