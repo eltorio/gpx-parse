@@ -11,7 +11,7 @@
     "geo"
   ],
   "dependencies": {
-    "xml2js": "^0.4.4",
+    "xml2js": "^0.4.23",
     "url": "^0.11.0",
     "assert":"^2.0.0",
     "timers-browserify":"^2.0.12",
@@ -24,16 +24,16 @@
     "url": "https://github.com/elliotstokes/gpx-parse.git"
   },
   "devDependencies": {
-    "browserify": "~13.2.0",
+    "browserify": "~17.0.0",
     "coveralls": "*",
-    "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-cli": "^1.2.0",
-    "grunt-jsdoc": "^2.1.0",
+    "grunt": "^1.5.2",
+    "grunt-browserify": "^6.0.0",
+    "grunt-cli": "^1.4.3",
+    "grunt-jsdoc": "^2.4.1",
     "jscoverage": "*",
     "nodeunit": "*",
     "sandboxed-module": "*",
-    "server-destroy": "^1.0.0",
+    "server-destroy": "^1.0.1",
     "st": "^1.2.0"
   },
   "scripts": {
